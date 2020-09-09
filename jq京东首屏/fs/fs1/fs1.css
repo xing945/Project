@@ -1,0 +1,81 @@
+.fs-menu{
+    height:470px;
+    background-color: #fff;
+    margin-top:10px;
+    padding:10px 0;
+    box-sizing: border-box;
+}
+
+.fs-menu li{
+    padding-left:18px;
+    height:25px;
+    line-height:25px;
+}
+
+.fs-menu li.menu-on{
+    background-color: #ddd;
+}
+
+.fs-menu li a{
+    font-size:14px;
+    color:#333;
+}
+
+/* 右侧内容 */
+.menu-content{
+    width:998px;
+    min-height:468px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+    position: absolute;
+    left:190px;
+    top:10px; 
+    padding:20px 0 10px;
+    box-sizing: border-box;
+    z-index: 100;
+    display:none;
+}
+
+.menu-content .tabs-nav{
+    padding-left:20px;
+    height:24px;
+}
+.menu-content .tabs-nav a{
+    float:left;
+    padding:0 10px;
+    height:24px;
+    line-height: 24px;
+    background-color: #333;
+    color:#fff;
+    margin-right:13px; 
+}
+
+.menu-content .cate-box{
+    padding: 10px 0 0 20px;
+}
+
+.menu-content .cate-box .cate-item{
+    overflow: hidden;
+}
+
+.menu-content .cate-box .cate-item dt{
+    width:70px;
+    float:left;
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.menu-content .cate-box .cate-item dd{
+    overflow: hidden;
+}
+
+.menu-content .cate-box .cate-item a{
+    white-space: nowrap;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 0;
+    padding: 0 7px;
+    color: #666;
+    display: inline-block
+}

@@ -1,0 +1,167 @@
+.seckill-w{
+    margin-top:20px;
+}
+
+.seckill-w .seckill-countdown{
+    width: 190px;
+    height: 260px;
+    float:left;
+}
+
+.seckill-w .seckill-countdown a{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 100%;
+    color: #fff;
+    background-color: #e83632;
+    background-image: url(//misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/4a15d8883775742e3efbb850ae14def7.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.seckill-w .seckill-countdown a .seckill-title{
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    margin-top:31px;
+    font-weight:bold;
+}
+
+.seckill-w .seckill-countdown .countdown-desc{
+    margin-top:90px;
+    font-size:14px;
+    text-align: center;
+}
+
+.seckill-countdown .countdown-main{
+    width:130px;
+    height:30px;
+    margin-top:10px;
+    display:block;
+    color:#333;
+    font-weight:bold;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.seckill-countdown .countdown-main .timmer__unit{
+    width:30px;
+    height:30px;
+    background-color: #2f3430;
+    color:#fff;
+    font-size:20px;
+    margin-right:20px;
+    text-align: center;
+    position: relative;
+    float:left;
+}
+
+.seckill-countdown .countdown-main .timmer__unit::after{
+    content:':';
+    display:block;
+    position: absolute;
+    right:-20px;
+    top:0;
+    width:20px;
+    height:100%;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.seckill-countdown .countdown-main .timmer__unit--second{
+    margin-right: 0;
+}
+.seckill-countdown .countdown-main .timmer__unit--second::after{
+    content:'';
+}
+
+/*  */
+.seckill-w .seckill-list{
+    width:800px;
+    height:260px;
+    background-color: #fff;
+    float:left;
+}
+
+.seckill-w .seckill-list .seckill-item__image{
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.seckill-w .seckill-list .seckill-item__name{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.seckill-w .seckill-list .seckill-item__price{
+    border: 1px solid #e1251b;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 24px;
+    overflow: hidden;
+    background-color: #e1251b;
+    width: 160px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+
+
+.seckill-w .seckill-list .seckill-item__price .price-miaosha{
+    width: 92px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    float: left;
+}
+
+.seckill-w .seckill-list .seckill-item__price .price-origin{
+    float:right;
+    height: 100%;
+    width: 66px;
+    background: #fff;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: line-through;
+}
+
+/*  */
+.seckill-w .seckill-brand{
+    width: 200px;
+    height: 260px;
+    float: right;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding:10px;
+}
+.seckill-w .seckill-brand .seckill-brand-item{
+    width:100%;
+    height:100%;
+}
+
+.seckill-w .seckill-brand .seckill-brand-item img{
+    width:100%;
+    height:100%;
+}
