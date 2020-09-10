@@ -21,52 +21,6 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      bannerList: [],
-      bannerWidth: 350,
-      bannerStyle: {
-        left: 0,
-        transition: "left .3s"
-      },
-      bannerIndex: 0
-    };
-  },
-  methods: {
-    async getData() {
-      const res = await this.axios.get("banner");
-      let endEl = { ...res[0] };
-      endEl.id = Math.floor(Math.random() * 100000);
-      this.bannerList = [...res, endEl];
-    },
-    autoMove() {
-      setTimeout(() => {
-        if (this.bannerIndex === 0) {
-          this.bannerStyle.transition = "left .3s";
-        }
-        this.bannerIndex++;
-        this.bannerStyle.left = -this.bannerIndex * this.bannerWidth + "px";
-      }, 1500);
-    },
-    transitionendFn() {
-      if (this.bannerIndex === 3) {
-        this.bannerIndex = 0;
-        this.bannerStyle.left = 0;
-        this.bannerStyle.transition = "none";
-      }
-      this.autoMove();
-    }
-  },
-  mounted() {
-    this.getData();
-    this.autoMove();
-  }
-};
-</script>
-
 <style lang="less" scoped>
 .banner-box {
   position: relative;
@@ -115,3 +69,47 @@ export default {
   }
 }
 </style>
+<script>
+export default {
+  data() {
+    return {
+      bannerList: [],
+      bannerWidth: 350,
+      bannerStyle: {
+        left: 0,
+        transition: "left .3s"
+      },
+      bannerIndex: 0
+    };
+  },
+  methods: {
+    async getData() {
+      const res = await this.axios.get("banner");
+      let endEl = { ...res[0] };
+      endEl.id = Math.floor(Math.random() * 100000);
+      this.bannerList = [...res, endEl];
+    },
+    autoMove() {
+      setTimeout(() => {
+        if (this.bannerIndex === 0) {
+          this.bannerStyle.transition = "left .3s";
+        }
+        this.bannerIndex++;
+        this.bannerStyle.left = -this.bannerIndex * this.bannerWidth + "px";
+      }, 1500);
+    },
+    transitionendFn() {
+      if (this.bannerIndex === 3) {
+        this.bannerIndex = 0;
+        this.bannerStyle.left = 0;
+        this.bannerStyle.transition = "none";
+      }
+      this.autoMove();
+    }
+  },
+  mounted() {
+    this.getData();
+    this.autoMove();
+  }
+};
+</script>
