@@ -44,6 +44,34 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      navList: [],
+      navActive: 0,
+      navFlag: true
+    };
+  },
+  methods: {
+    // 显示或隐藏
+    handleClick() {
+      this.navFlag = !this.navFlag;
+    },
+    // 点击active
+    handleIndex(index) {
+      this.navActive = index;
+    }
+  },
+  mounted() {
+    this.axios.get("nav").then(res => {
+      this.navList = res;
+    });
+  }
+};
+</script>
+
 <style lang="less" scoped>
 nav {
   .nav-box {
@@ -124,29 +152,3 @@ nav {
   }
 }
 </style>
-<script>
-export default {
-  data() {
-    return {
-      navList: [],
-      navActive: 0,
-      navFlag: true
-    };
-  },
-  methods: {
-    // 显示或隐藏
-    handleClick() {
-      this.navFlag = !this.navFlag;
-    },
-    // 点击active
-    handleIndex(index) {
-      this.navActive = index;
-    }
-  },
-  mounted() {
-    this.axios.get("nav").then(res => {
-      this.navList = res;
-    });
-  }
-};
-</script>
