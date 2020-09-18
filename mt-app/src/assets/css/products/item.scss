@@ -1,0 +1,136 @@
+.item {
+	display: flex;
+	padding: 20px 0;
+	min-height: 125px;
+	border-top: 1px solid #e5e5e5;
+	font-size: 14px;
+	dt {
+		padding-right: 20px;
+		> img {
+			width: 220px;
+			height: 125px;
+			overflow: hidden;
+		}
+	}
+	dd {
+		flex: 1 1 auto;
+		> h3 {
+			a {
+				font-weight: 500;
+				font-size: 16px;
+				color: #333;
+			}
+		}
+		.el-rate {
+			display: inline-block;
+			.el-rate__icon {
+				font-size: 12px;
+			}
+		}
+		> span {
+			font-size: 12px;
+			margin-right: 10px;
+		}
+		.s-item-comment-total {
+			color: #f90;
+		}
+		.s-item-price {
+			color: #f60;
+		}
+		.deal-items {
+			.items {
+				cursor: pointer;
+				border-radius: 4px;
+				padding: 6px 0 8px;
+				&:hover {
+					background-color: #f8f8f8;
+					border-radius: 4px;
+					.deal-title {
+						color: #fe8c00;
+					}
+				}
+				.deal-title {
+					font-size: 14px;
+					line-height: 20px;
+				}
+				.deal-price {
+					font-size: 15px;
+					color: #f60;
+					margin-right: 10px;
+				}
+				.deal-old-price {
+					font-size: 12px;
+					color: #999;
+					margin-right: 10px;
+				}
+				.deal-sales {
+					font-size: 12px;
+					color: #999;
+				}
+			}
+		}
+		> p {
+			> span {
+                i{
+                    color:#ff9900;
+                }
+                .map{
+                    color:#222;
+                }
+				font-size: 12px;
+				padding-right: 10px;
+			}
+			> em {
+				font-style: normal;
+			}
+			> b {
+				float: right;
+				border: 1px solid #31bbac;
+				background-color: rgb(255, 153, 0);
+				border-color: rgb(255, 153, 0);
+				color: rgb(255, 255, 255);
+				padding: 0 6px;
+				border-radius: 2px;
+				height: 18px;
+				line-height: 18px;
+				font-size: 12px;
+				cursor: default;
+			}
+		}
+		> ul {
+			list-style: none;
+			font-size: 12px;
+			padding-top: 11px;
+			margin-top: 5px;
+			border-top: 1px dashed #ddd;
+			li {
+				width: 668px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				.detail-type {
+					width: 27px;
+					height: 15px;
+					line-height: 15px;
+					display: inline-block;
+					background: rgb(35, 147, 238);
+					color: #fff;
+					text-align: center;
+					border-radius: 1px;
+					padding: 1px 2px;
+					margin-right: 10px;
+				}
+				&:nth-child(2) {
+					.detail-type {
+						background: rgb(162, 35, 204);
+					}
+				}
+				&:nth-child(3) {
+					.detail-type {
+						background: rgb(234, 109, 45);
+					}
+				}
+			}
+		}
+	}
+}

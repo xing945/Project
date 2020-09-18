@@ -1,0 +1,187 @@
+.page {
+	.menu {
+		width: 230px;
+		height: 475px;
+		box-sizing: border-box;
+		margin-top: 30px;
+		color: #646464;
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #e5e5e5;
+		dt {
+			height: 50px;
+			padding-top: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-weight: 700;
+			margin-left: 15px;
+			margin-bottom: 16px;
+			color: #222;
+		}
+		dd {
+			position: relative;
+			box-sizing: border-box;
+			padding: 2px 12px;
+			height: 26px;
+			cursor: pointer;
+			&:hover {
+				background: rgba(255, 150, 0, 0.08);
+				color: #222222;
+				& > i {
+					opacity: 1;
+				}
+			}
+		}
+		.nav {
+			font-size: 13px;
+			dd > i {
+				font-family: 'meituan';
+				font-size: 14px;
+				font-style: normal;
+				margin-right: 11px;
+				&:before {
+					width: 14px;
+					height: 14px;
+					display: inline-block;
+				}
+			}
+			.food {
+				&:before {
+					content: '\e622';
+					color: #ff8200;
+				}
+			}
+
+			.takeout {
+				&:before {
+					content: '\e630';
+					color: #ffb500;
+				}
+			}
+
+			.hotel {
+				&:before {
+					content: '\e62a';
+					color: #9b5e3e;
+				}
+			}
+
+			.homestay {
+				&:before {
+					content: '\e631';
+				}
+			}
+
+			.movie {
+				&:before {
+					content: '\e62c';
+					position: relative;
+					left: -2px;
+				}
+			}
+
+			.airport {
+				&:before {
+					content: '\e632';
+				}
+			}
+
+			.ktv {
+				&:before {
+					content: '\e627';
+				}
+			}
+
+			.life {
+				&:before {
+					content: '\e633';
+				}
+			}
+
+			.hair {
+				&:before {
+					content: '\e626';
+					transform: scale(0.7);
+				}
+			}
+
+			.marry {
+				&:before {
+					content: '\e629';
+				}
+			}
+
+			.offspring {
+				&:before {
+					content: '\e623';
+				}
+			}
+
+			.sport {
+				&:before {
+					content: '\e62b';
+				}
+			}
+
+			.furniture {
+				&:before {
+					content: '\e625';
+				}
+			}
+
+			.study {
+				&:before {
+					content: '\e624';
+				}
+			}
+
+			.health {
+				&:before {
+					content: '\e628';
+				}
+			}
+
+			.bar {
+				&:before {
+					content: '\e621';
+				}
+			}
+			.icon-youjiantou {
+				font-size: 12px;
+				float: right;
+				margin-right: 8px;
+			}
+		}
+		.detail {
+			padding: 0 30px;
+			position: absolute;
+			left: 230px;
+			bottom: 0;
+			width: 400px;
+			height: 416px;
+			background: #fff;
+			z-index: 9999;
+			h4 {
+				font-size: 16px;
+				font-weight: 500;
+				margin-top: 24px;
+				height: 22px;
+				line-height: 22px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #e5e5e5;
+				color: #222;
+			}
+			span {
+				color: #999;
+				font-size: 12px;
+				line-height: 15px;
+				display: inline-block;
+                margin:10px 16px 0 0;
+				cursor: pointer;
+				&:hover {
+					color: #31bbac;
+				}
+			}
+		}
+	}
+}

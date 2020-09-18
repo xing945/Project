@@ -1,0 +1,12 @@
+.product {
+	margin-top: 80px;
+	padding-top: 10px;
+	font-size: 14px;
+	.crumbs {
+		margin: 10px 0;
+		.el-breadcrumb {
+            font-size: 12px;
+            padding:14px 0;
+		}
+	}
+}

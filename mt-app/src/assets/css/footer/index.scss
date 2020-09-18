@@ -1,0 +1,140 @@
+.com-footer {
+	background: #f8f8f8;
+	.footer-content {
+		width: 1190px;
+		margin: 0 auto;
+		color: #333;
+		font-size: 12px;
+		line-height: 2;
+		box-sizing: border-box;
+		text-align: left;
+		p {
+			margin: 0;
+		}
+		.footer-link {
+			padding: 40px 45px;
+			border-bottom: 1px solid #e5e5e5;
+			.footer-column {
+				width: 20%;
+				float: left;
+				dl {
+					padding-bottom: 20px;
+					color: #333;
+					dt {
+						font-size: 14px;
+						font-weight: 500;
+					}
+					a {
+						color: #666;
+						&:hover {
+							color: #fe8c00;
+						}
+					}
+				}
+			}
+		}
+		.footer-copyright {
+			color: #999;
+			padding-left: 20px;
+			padding-top: 15px;
+			padding-bottom: 30px;
+			line-height: 1.6;
+			a {
+                color: #999;
+                margin-right:20px;
+				&:hover {
+					color: #fe8c00;
+				}
+			}
+			.footer-copyright-left {
+				float: left;
+			}
+			.footer-copyright-right {
+				float: right;
+				text-align: right;
+				.beianicon {
+					width: 15px;
+					position: relative;
+					top: 4px;
+					left: -2px;
+				}
+			}
+			.footer-copyright-cert {
+				text-align: left;
+				padding-top: 6px;
+				a.sp-ft {
+					display: inline-block;
+					overflow: hidden;
+					text-indent: -1000px;
+                    height: 38px;
+                    background-image: url("~@/assets/img/footer1.png");
+                    background-position: 0 0;
+                    background-size: 100% 100%;
+					margin-right: 2px;
+				}
+				.sp-ft--record {
+					width: 109px;
+					background-position: 0 -167px;
+				}
+				.sp-ft--knet {
+                    width: 107px;
+                    background-image: url('~@/assets/img/footer2.png') !important;
+                    background-position: 0 0;
+                    background-size: 100% 100%;
+				}
+				.sp-ft--12315 {
+					width: 107px;
+					background-image: url('~@/assets/img/footer3.png') !important;
+                    background-position: 0 0;
+                    background-size: 100% 100%;
+				}
+				.bus-license {
+					img {
+						width: 38px;
+						height: 38px;
+						float: left;
+                    }
+                    p{
+                        float:left;
+                        line-height: 38px;
+                        padding:0 5px;
+                    }
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.com-footer {
+		.footer-content {
+			width: 960px;
+			.footer-title-module {
+				padding-right: 40px;
+			}
+			.footer-title {
+				margin-left: 0;
+			}
+			.footer-search-block,
+			.com-footer {
+				.footer-content {
+					.footer-search-hotword {
+						width: 500px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.com-footer {
+	.clearfix {
+		&::after {
+			content: ' ';
+			visibility: hidden;
+			display: block;
+			height: 0;
+			clear: both;
+		}
+	}
+}
